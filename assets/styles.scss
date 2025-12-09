@@ -1,8 +1,8 @@
-@use "variables";
-@use "cards-grid";
-@use "card";
-@use "tag";
-@use "typography";
+@use "./variables.scss";
+@use "./cards-grid.scss";
+@use "./card.scss";
+@use "./tag.scss";
+@use "./typography.scss";
 
 body {
   @extend .pt-lato;

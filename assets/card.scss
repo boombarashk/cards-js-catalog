@@ -51,11 +51,11 @@
   }
 
   &-author {
-    display: flex-inline;
+    display: inline-flex;
     padding-left: 8px;
     color: var(--gray-700);
     font-size: 18px;
-    line-height: 1;
+    line-height: 1rem;
     font-weight: 400;
     border-left: 1px solid var(--gray-700);
     align-self: center;

@@ -14,20 +14,15 @@
   "author": "boombarashk",
   "type": "module",
   "scripts": {
-    "build-css": "sass assets/styles.scss dist/styles.css",
-    "minify-js": "terser src/main.js -o dist/bundle.js",
     "prettier": "npx prettier . --write",
-    "build": "npm run build-css && rollup -c",
-    "start": "npm run build && node dev-server.js"
+    "build": "vite build",
+    "dev": "vite"
   },
   "dependencies": {
-    "express": "^5.2.1",
-    "sass": "^1.94.2",
-    "terser": "^5.44.1"
+    "sass": "^1.94.2"
   },
   "devDependencies": {
-    "@rollup/plugin-terser": "^0.4.4",
     "prettier": "^3.7.4",
-    "rollup": "^4.53.3"
+    "vite": "^7.2.7"
   }
 }

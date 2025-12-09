@@ -1,4 +1,5 @@
-import { API_URL, CATEGORIES_COLORS } from "./settings";
+import COURSES from "../assets/courses.json";
+import { CATEGORIES_COLORS } from "./settings";
 
 const main = document.getElementById("root");
 const searchInput = document.getElementById("search-input");
@@ -78,23 +79,12 @@ function filterCards() {
 }
 
 searchInput.addEventListener("input", filterCards);
+const { collection } = COURSES;
 
-fetch(API_URL)
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error(`HTTP error status: ${response.status}`);
-    }
-    return response.json();
-  })
-  .then(({ collection }) => {
-    if (Array.isArray(collection)) {
-      products = collection;
-      renderCategories(collection.map((item) => item.category));
-      renderCards(collection);
-    } else {
-      console.log("Data is not an array, but an object:", collection);
-    }
-  })
-  .catch((error) => {
-    console.error("Error fetching data:", error);
-  });
+if (Array.isArray(collection)) {
+  products = collection;
+  renderCategories(collection.map((item) => item.category));
+  renderCards(collection);
+} else {
+  console.log("Data is not an array, but an object:", collection);
+}

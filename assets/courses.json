@@ -6,7 +6,7 @@
       "price": 100,
       "author": "Jerome Bell",
       "category": "Marketing",
-      "image": "images/picture1.jpg"
+      "image": "assets/images/picture1.jpg"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "price": 480,
       "author": "Marvin McKinney",
       "category": "Management",
-      "image": "images/picture2.jpg"
+      "image": "assets/images/picture2.jpg"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "price": 200,
       "author": "Leslie Alexander Li",
       "category": "HR & Recruting",
-      "image": "images/picture3.jpg"
+      "image": "assets/images/picture3.jpg"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "price": 530,
       "author": "Kristin Watson",
       "category": "Marketing",
-      "image": "images/picture4.jpg"
+      "image": "assets/images/picture4.jpg"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "price": 500,
       "author": "Guy Hawkins",
       "category": "Design",
-      "image": "images/picture5.jpg"
+      "image": "assets/images/picture5.jpg"
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "price": 400,
       "author": "Dianne Russell",
       "category": "Management",
-      "image": "images/picture6.jpg"
+      "image": "assets/images/picture6.jpg"
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "price": 600,
       "author": "Brooklyn Simmons",
       "category": "Development",
-      "image": "images/picture7.jpg"
+      "image": "assets/images/picture7.jpg"
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "price": 150,
       "author": "Kathryn Murphy",
       "category": "HR & Recruting",
-      "image": "images/picture8.jpg"
+      "image": "assets/images/picture8.jpg"
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "price": 240,
       "author": "Cody Fisher",
       "category": "Design",
-      "image": "images/picture9.jpg"
+      "image": "assets/images/picture9.jpg"
     }
   ]
 }
