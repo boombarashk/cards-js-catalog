@@ -1,0 +1,33 @@
+{
+  "name": "cards-js-catalog",
+  "version": "0.1",
+  "description": "pet vanilla js catalog",
+  "homepage": "https://github.com/boombarashk/cards-js-catalog#readme",
+  "bugs": {
+    "url": "https://github.com/boombarashk/cards-js-catalog/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boombarashk/cards-js-catalog.git"
+  },
+  "license": "ISC",
+  "author": "boombarashk",
+  "type": "module",
+  "scripts": {
+    "build-css": "sass assets/styles.scss dist/styles.css",
+    "minify-js": "terser src/main.js -o dist/bundle.js",
+    "prettier": "npx prettier . --write",
+    "build": "npm run build-css && rollup -c",
+    "start": "npm run build && node dev-server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "sass": "^1.94.2",
+    "terser": "^5.44.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "prettier": "^3.7.4",
+    "rollup": "^4.53.3"
+  }
+}

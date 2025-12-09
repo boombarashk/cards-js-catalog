@@ -1,0 +1,38 @@
+@use "variables";
+
+.pt-lato {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.head {
+  margin: 0;
+}
+
+.head1 {
+  @extend .head;
+  font-size: 46px;
+  line-height: 1.3;
+  font-weight: 900;
+}
+
+.head2 {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.head6 {
+  @extend .head;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--gray-800);
+}

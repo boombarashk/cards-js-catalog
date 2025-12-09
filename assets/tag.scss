@@ -1,0 +1,48 @@
+.ghost {
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 1px 16px;
+  color: var(--gray-600);
+
+  .sup {
+    font-size: 10px;
+  }
+  cursor: pointer;
+
+  &-active {
+    cursor: default;
+    color: var(--red);
+    border: 1px solid var(--red);
+  }
+}
+
+.badge {
+  border-radius: 4px;
+  padding: 1px 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--white);
+
+  &--green {
+    background-color: var(--badge-green);
+  }
+
+  &--orange {
+    background-color: var(--badge-orange);
+  }
+
+  &--blue {
+    background-color: var(--badge-blue);
+  }
+  &--red {
+    background-color: var(--badge-red);
+  }
+  &--violet {
+    background-color: var(--badge-violet);
+  }
+  &--default {
+    background-color: var(--secondary);
+  }
+}

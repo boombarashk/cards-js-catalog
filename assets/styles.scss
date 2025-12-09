@@ -1,0 +1,97 @@
+@use "variables";
+@use "cards-grid";
+@use "card";
+@use "tag";
+@use "typography";
+
+body {
+  @extend .pt-lato;
+  background-color: var(--white);
+  margin: 0;
+}
+
+header {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 44px 15px 0;
+  color: var(--gray-900);
+  text-align: center;
+
+  .search {
+    position: relative;
+    flex: 1;
+    text-align: right;
+
+    .icon {
+      position: absolute;
+      display: block;
+      top: 18px;
+      right: 16px;
+      height: 16px;
+      width: 16px;
+      background: 0 0 no-repeat url("./images/loupe.svg");
+      z-index: 0;
+    }
+  }
+
+  .search-input {
+    @extend .pt-lato;
+    box-sizing: border-box;
+    border: 1px solid var(--gray-400);
+    border-radius: 4px;
+    padding: 16px 40px 16px 16px;
+    width: 315px;
+
+    &::placeholder {
+      font-weight: 400;
+      color: var(--gray-600);
+    }
+  }
+
+  nav {
+    display: flex;
+    margin: 86px auto 50px;
+    flex-wrap: wrap;
+    align-items: baseline;
+    font-weight: 400;
+  }
+}
+
+#shapes {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  * {
+    position: absolute;
+  }
+  .shape-dots {
+    top: 50px;
+    right: 0;
+    opacity: 0.8;
+  }
+  .shape-1 {
+    top: 637px;
+    left: 56px;
+  }
+  .shape-2 {
+    top: 1108px;
+    right: 50px;
+  }
+}
+
+.load-more {
+  display: flex;
+  gap: 16px;
+  max-width: var(--max-content-width);
+  cursor: pointer;
+  margin: 50px auto 86px;
+  color: var(--gray-800);
+  justify-content: center;
+}
+
+@media (max-width: 1524px) {
+  #shapes {
+    display: none;
+  }
+}
