@@ -12,11 +12,12 @@ let products, selectedCategoryElement;
 
 function renderCards(collection) {
   main.innerHTML = "";
-  collection.forEach((product) => {
+  collection.forEach((product, ind) => {
     const card = document.createElement("section");
     card.className = "card";
+    card.tabIndex = 0;
     card.innerHTML = `
-      <img src="${product.image}" alt="${product.title}">
+      <img src="${product.image}" alt="${product.title}"/>
       <div class="card-info">
         <span class="card-tag badge badge--${CATEGORIES_COLORS[product.category?.toLowerCase()] ?? "orange"}">${product.category}</span>
         <h2 class="card-title head2">${product.title}</h2>
